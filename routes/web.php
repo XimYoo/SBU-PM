@@ -5,7 +5,7 @@ use App\Http\Controllers\LoginController;
 
 // Default route
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.signin');
 });
 
 // Route for the login page handled by LoginController
@@ -20,6 +20,7 @@ Route::get('/signup', function () {
 })->name('signup');
 
 // Protected route for the dashboard page (requires user to be logged in)
-Route::get('/dashboard', function () {
+Route::get('/home', function () {
     return view('dashboard');
 })->middleware('auth')->name('dashboard');
+

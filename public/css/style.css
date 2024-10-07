@@ -1,0 +1,19 @@
+/* Highlight background saat hover pada link */
+#sidenav-main .navbar-nav .nav-item .nav-link:hover {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Highlight pada icon saat hover */
+  #sidenav-main .navbar-nav .nav-item .nav-link:hover .icon {
+    background-color: #e0e0e0;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Ubah warna teks saat hover */
+  #sidenav-main .navbar-nav .nav-item .nav-link:hover .nav-link-text {
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
